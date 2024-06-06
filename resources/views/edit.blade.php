@@ -16,36 +16,36 @@
         @csrf
         @method('PUT')
         <div class="form-group">
-            <label for="title">Title</label>
-            <input type="text" class="form-control" id="title" name="Title"  value="{{$task->Title}}">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="Name" >
         </div>
         <div class="form-group">
-            <label for="description">Description</label>
-            <textarea class="form-control" id="description" name="Description" rows="3" >{{$task->Description}}</textarea>
+            <label for="travelsandname">Travels and Name</label>
+            <textarea class="form-control" id="travelsandname" name="Travels and Name" rows="3"></textarea>
         </div>
         <div class="form-group">
-            <label for="priority">Priority</label>
-            <select class="form-control" id="priority" name="Priority" >
-                <option value="low" {{ $task->Priority=="low" ? 'selected' : '' }}>Low</option>
-                <option value="medium" {{ $task->Priority=="medium" ? 'selected' : '' }}>Medium</option>
-                <option value="high" {{ $task->Priority=="high" ? 'selected' : '' }}>High</option>
-            </select>
+            <label for="accountdetails">Account Details</label>
+            <textarea class="form-control" id="accountdetails" name="Account Details" rows="3" >{{$task->Account_Details}}</textarea>
         </div>
         <div class="form-group">
-            <label for="Status">Status</label>
-            <select class="form-control" id="status" name="Status" >
-                <option value="NotStarted" {{ $task->Status=="NotStarted" ? 'selected' : '' }}>Not Started</option>
-                <option value="Ongoing" {{ $task->Status=="Ongoing" ? 'selected' : '' }}>Ongoing</option>
-                <option value="Completed" {{ $task->Status=="Completed" ? 'selected' : '' }}>Completed</option>
-            </select>
+            <label for="busname">Bus Name</label>
+            <textarea class="form-control" id="busname" name="Bus Name" rows="3" >{{$task->Bus_Name}}</textarea>
         </div>
         <div class="form-group">
-            <label for="due_date">Due Date</label>
-            <input type="date" class="form-control" id="Duedate" name="Duedate" value="{{$task->Duedate}}">
+            <label for="busnumber">Bus Number</label>
+            <textarea class="form-control" id="busnumber" name="Bus Number" rows="3" >{{$task->Bus_Number}}</textarea>
         </div>
+        <div class="form-group">
+            <label for="busseatcounts">Bus Seat counts</label>
+            <textarea class="form-control" id="busseatcounts" name="Bus Seat counts" rows="3" >{{$task->Bus_Seat_counts}}</textarea>
+        </div>
+        <div class="form-group">
+            <label for="dateofbirth">Date of Birth</label>
+            <textarea class="form-control" id="dateofbirth" name="Date of Birth" rows="3" >{{$task->Date_of_Birth}}</textarea>
+        </div>
+        
         <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-       
 </div>
 
 

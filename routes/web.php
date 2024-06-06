@@ -25,8 +25,13 @@ Route::post('/createtask', [TaskController::class, 'createtask']);
 Route::put('/edittask/{task}',[TaskController::class,'editinsert']);
 
 Route::post('/editiinsert',[TaskController::class,'edit']);
+Route::put('/boardtask/{task}',[TaskController::class,'boardinsert']);
+Route::put('/boardinsert',[TaskController::class,'board']);
+
+Route::post('/editiinsert',[TaskController::class,'edit']);
 Route::delete('/deletee/{task}', [TaskController::class, 'deletetask']);
 Route::post('/tedit/{task}', [TaskController::class, 'tedit']);
+Route::post('/tboard/{task}', [TaskController::class, 'tboard']);
 
 
 require __DIR__.'/auth.php';

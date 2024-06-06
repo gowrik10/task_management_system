@@ -49,7 +49,7 @@
 </nav>
     <br>
     <div class="container text-center">
-        <h1>Task Management System</h1>
+        <h1>Bus Management System</h1>
 
         <h2>Task List</h2> @if(session('success'))
         <div class="alert alert-success">
@@ -70,26 +70,31 @@
         <table class="table table-bordered">
             <thead class="thead-dark">
                 <tr>
-                    <th>Title</th>
-                    <th>Description</th>
-                    <th>Priority</th>
-                    <th>Due Date</th>
-                    <th>Status</th>
-                    <th>Actions</th>
+                    <th>Name</th>
+                    <th>Travels and Name</th>
+                    <th>Account Details</th>
+                    <th>Bus Name</th>
+                    <th>Bus Number</th>
+                    <th>Bus Seat Counts</th>
+                    <th>Date of Birth</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ($tasks as $task)
                 <tr>
-                    <td>{{ $task->Title }}</td>
-                    <td>{{ $task->Description }}</td>
-                    <td>{{ $task->Priority }}</td>
-                    <td>{{ $task->Duedate }}</td>
-                    <td>{{ $task->Status}}</td>
-                    <td>
+                    <td>{{ $task->Name }}</td>
+                    <td>{{ $task->Travels_an_Name }}</td>
+                    <td>{{ $task->Account_Details }}</td>
+                    <td>{{ $task->Bus_Name }}</td>
+                    <td>{{ $task->Bus_Number}}</td>
+                    <td>{{ $task->Bus_Seats_Counts}}</td>
+                    <td>{{ $task->Date_of_Birth}}</td>
+                </tr>
                     <form action='/tedit/{{$task->id}}' method='POST'>
+                    <form action='/tboard/{{$task->id}}' method='POST'>
             @csrf
            <button  style="margin:15px;">Edit</button> 
+           <button  style="margin:15px;">Board</button> 
     </form>
 <form action="/deletee/{{$task->id}}" method="POST">
                             @csrf
