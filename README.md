@@ -1,3 +1,17 @@
+## Task Management System
+This application consists of operation such as creation,updation and deletion with database.<br>The modules in the application are<br><ul><li>login</li><li>register</li><li>dashboard</li><li>create task</li><li>edit task</li></ul>
+The languages used are<ul><li> PHP</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li><li>HTML</li></ul>
+## Features
+<ul><li> User Authentication</li><li>Tast Management</li></ul>
+
+![image 6](https://github.com/gowrik10/task_management_system/assets/168890283/3df9f390-33d7-4ff8-80c1-bdfb628e5673)
+![image 5](https://github.com/gowrik10/task_management_system/assets/168890283/dc77ea4e-137b-4986-bf89-d070293d38a8)
+![image 4](https://github.com/gowrik10/task_management_system/assets/168890283/802658e0-670b-4b3f-90da-82bee1a3eff8)
+![image 3](https://github.com/gowrik10/task_management_system/assets/168890283/53799cfe-8a28-4030-84e8-e475ae5c018e)
+![image 1](https://github.com/gowrik10/task_management_system/assets/168890283/3094bc67-ce36-4edd-a36d-010876734cad)
+![image2](https://github.com/gowrik10/task_management_system/assets/168890283/e90c476e-2920-4ba1-a385-78b92f8552f8)
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
